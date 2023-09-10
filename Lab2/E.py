@@ -24,8 +24,8 @@ def decrypt_aes_ecb(ciphertext, key):
         return str(e)
 
 if __name__ == "__main__":
-    ciphertext = "b436bd84d16db330359edebf49725c62"
-    password = "hello"
+    ciphertext = input("enter cipher text:  ")
+    password = input("enter the encryption key:  ")
 
     # Derive the 256-bit AES key from the password using PBKDF2
     salt = b'SomeSaltHere'  # You can change the salt value
